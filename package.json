@@ -5,7 +5,7 @@
     "author": "neekey <ni184775761@gmail.com>",
     "keywords": [ "cssm" ],
     "main": "index.js",
-    "bin": { "cssm": "./bin/cssm.css" },
+    "bin": { "cssm": "./bin/cssm" },
     "repository": {
     "type": "git",
         "url": "git@github.com:neekey/cssm.git"
