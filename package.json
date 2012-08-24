@@ -1,0 +1,19 @@
+{
+    "name": "test.css",
+    "description": "A node.js module that minimize CSS files.",
+    "version": "0.0.1",
+    "author": "neekey <ni184775761@gmail.com>",
+    "keywords": [ "test.css" ],
+    "main": "index.js",
+    "bin": { "cssm": "./bin/test.css" },
+    "repository": {
+    "type": "git",
+        "url": "git@github.com:neekey/test.css.git"
+    },
+    "dependencies": {
+        "commander": "*",
+        "iconv-lite": "*",
+        "npmlog": "*",
+        "underscore": "*"
+    }
+}

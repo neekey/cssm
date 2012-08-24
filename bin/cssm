@@ -1,0 +1,33 @@
+#!/usr/bin/env node
+
+var program = require( 'commander' );
+var Path = require( 'path' );
+var CssM = require( '../lib/cssm' );
+var PackageInfo = require( '../package.json' );
+
+program
+    // Set version.
+    .version( PackageInfo.version )
+    .option('-c, --charset [value]', 'The charset encoding to use when compress your file.')
+    .option('-s, --suffix [value]', 'Suffix that the compressed file will be add.')
+    // Parse the arguments.
+    .parse(process.argv);
+
+// Get input file
+// All string after `cssm` will be an arg, but any string that after an `-*` will be ignored.
+// Example:
+//      cssm hello ===> [ 'hello' ]
+//      cssm hello -f world ===> [ 'hello' ]
+//      cssm hello -f world world ===> [ 'hello', 'world' ]
+var args = program.args;
+
+// Build the configuration.
+var compressConfig = {
+	input: args,
+	charset: program.charset,
+	output: program.output,
+	suffix: program.suffix
+};
+
+// Do the job!
+CssM.compress( compressConfig, program.all );

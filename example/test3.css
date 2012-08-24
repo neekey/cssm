@@ -1,0 +1,16 @@
+.header {
+    width: 500px;
+    height: 500px;
+    display: block;
+    font-family: '你好';
+}
+.content {
+    width: 500px;
+    height: 500px;
+    display: block;
+}
+.footer {
+    width: 500px;
+    height: 500px;
+    display: block;
+}
