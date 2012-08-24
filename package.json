@@ -1,14 +1,14 @@
 {
-    "name": "test.css",
+    "name": "cssm",
     "description": "A node.js module that minimize CSS files.",
     "version": "0.0.1",
     "author": "neekey <ni184775761@gmail.com>",
-    "keywords": [ "test.css" ],
+    "keywords": [ "cssm" ],
     "main": "index.js",
-    "bin": { "cssm": "./bin/test.css" },
+    "bin": { "cssm": "./bin/cssm.css" },
     "repository": {
     "type": "git",
-        "url": "git@github.com:neekey/test.css.git"
+        "url": "git@github.com:neekey/cssm.git"
     },
     "dependencies": {
         "commander": "*",
