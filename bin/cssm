@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 var program = require( 'commander' );
-var Path = require( 'path' );
 var CssM = require( '../lib/cssm' );
 var PackageInfo = require( '../package.json' );
 
